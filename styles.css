@@ -1,0 +1,82 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    flex-direction: row-reverse;
+}
+
+aside {
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 20px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #A2D2FF;
+}
+
+main {
+    width: 80%;
+    background: linear-gradient(-45deg, #A2D2FF, #FFA69E, #FFECB5);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.intro-content {
+    text-align: center;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+
+h1 {
+    font-size: 4rem;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
+p {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
