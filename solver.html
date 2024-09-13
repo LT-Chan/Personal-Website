@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6x6 Color Grid</title>
+    <link rel="stylesheet" href="solver.css">
+</head>
+
+<body>
+    <h1>6x6 Solver</h1>
+
+    <div class="main-grid-container">
+
+        <div class="count-container">
+            <div class="count" id="count-1">0/0</div>
+            <div class="count" id="count-2">0/0</div>
+            <div class="count" id="count-3">0/0</div>
+            <div class="count" id="count-4">0/0</div>
+            <div class="count" id="count-5">0/0</div>
+            <div class="count" id="count-6">0/0</div>
+        </div>
+
+        <div class="grid-wrapper">
+            <div class="grid-container">
+                <!-- Grid cells will be generated using JavaScript -->
+            </div>
+            <div class="row-count-container">
+                <div class="row-count" id="row-count-1">0/0</div>
+                <div class="row-count" id="row-count-2">0/0</div>
+                <div class="row-count" id="row-count-3">0/0</div>
+                <div class="row-count" id="row-count-4">0/0</div>
+                <div class="row-count" id="row-count-5">0/0</div>
+                <div class="row-count" id="row-count-6">0/0</div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="btn-group">
+		<button onclick="resetAll()">Reset</button>
+		<button onclick="toggleLetters()" id="toggleLetters">Toggle Letters</button>
+		<button id="check">Check</button>
+	</div>
+
+	<div class="btn-group">
+		<button id="adjacent">Adjacent</button>
+		<button id="numbersButton">Numbers</button>
+		<button id="othersButton">Others</button>
+	</div>
+
+    <script src="solver.js"></script>
+</body>
+
+</html>
